@@ -1,0 +1,22 @@
+# Phase 3: complex 9-node mesh. Source 0, destinations 7 and 8.
+#
+# Built to contain the hidden terminal case from the report: node 2 is far from
+# node 6, but node 4 (the receiver of link 2 -> 4) is a direct neighbour of 6.
+# With 6 as the primary, a sender-only check wrongly allows 2 -> 4; the strict
+# two-check rule rejects it.
+nodes 9
+source 0
+dest 7 8
+link 0 1 0.7
+link 0 2 0.6
+link 1 3 0.8
+link 2 3 0.7
+link 2 4 0.5
+link 3 5 0.7
+link 4 5 0.6
+link 4 6 0.8
+link 5 6 0.7
+link 5 7 0.8
+link 5 8 0.6
+link 6 7 0.6
+link 6 8 0.7

@@ -1,0 +1,11 @@
+# Phase 0: linear baseline. 0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6.
+# There is no choice of next hop, so every routing metric gives the same cost.
+nodes 7
+source 0
+dest 6
+link 0 1 0.9
+link 1 2 0.8
+link 2 3 0.7
+link 3 4 0.9
+link 4 5 0.6
+link 5 6 0.8
